@@ -1,0 +1,273 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0F2027;
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: -moz-linear-gradient(top, #2C5364, #203A43, #0F2027);
+    background: -ms-linear-gradient(top, #2C5364, #203A43, #0F2027);
+    background: -o-linear-gradient(top, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(top, #2C5364, #203A43, #0F2027);
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+    margin: 30px 0px;
+}
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+nav ul li a:hover{
+    color: #649ab1;
+}
+
+@media only screen and (max-width:700px){
+    nav ul{
+        width: 100%;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: white;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .productcolumn {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    .productcolumn {
+        width: 100%;
+        display: block;
+        }
+    .gallery{
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        overflow: auto;
+    }
+    .column4 {
+        width: 100%;
+        display: block;
+        overflow: auto;
+      }
+}
+
+.row{ /* Starter bzw. Index */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.row h2{
+    color: white;
+}
+.collumn1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 10px;
+}
+.collumn1 h1{
+    font-size: 54px;
+    color: white;
+}
+.collumn1 h2{
+    color: white;
+}
+.collumn1 p{
+    color: white;
+    font-size: 17px;
+    text-align: justify;
+}
+button{
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: white;
+    background: linear-gradient(to right,#649ab1,#35505c);
+    border-radius: 8px;
+    cursor: pointer;
+}
+button a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+button:hover{
+    transform: scale(1.1);
+}
+.collumn2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+.collumn2 .bikestarter{
+    width: 90%;
+    display: flex;
+}
+.leistungen h1{/* Startseite Leistungen*/
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-top: -5%;
+    color: white;
+}
+.row2{
+    display: flex;
+    margin: 80px 0;
+    width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+    max-width: 82%;
+}
+.pic1:hover{
+    transform: scale(1.1);
+}
+.container1 h3 {
+    text-align: left;
+    color: white;
+  }
+
+.row6{ /* Impressum*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.row6 img{
+    width: 500px;
+    display: flex;
+    float: right;
+
+}
+.collumn3{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 10px;
+}
+.collumn3 h1{
+    color: white;
+    font-size: 54px;
+}
+.collumn3 p{
+    color: white;
+    text-align: justify;
+}
+.gallery { /* Produktseite*/
+    margin: 7px;
+    float: left;
+    width: 185px;
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(18.1px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+  
+.gallery:hover {
+    opacity: 0.6;
+  }
+  
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+  }
+  
+.description {
+    padding: 15px;
+    text-align: center;
+    color: white;
+  }
+.unserteam h1{ /* Anpassung Unser Team Webseite mit 4 Mitgliedern - Unser Team*/
+    font-size: 55px;
+   
+}
+.row4{
+    color: white;
+    float: left;
+    z-index: 4;
+    display: flex;
+}
+.column4 {
+    float: left;
+    width: 20%;
+    margin-top: 40px;
+    padding: 0 40px;
+  }
+.shadow {
+    border-radius: 16px;
+    backdrop-filter: blur(18.1px);
+    -webkit-backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(18.1px);
+    -webkit-backdrop-filter: blur(20px);
+    padding-bottom: 30px;
+  }
+.shadow img{
+    border-radius: 17px;
+  }
+.shadow:hover{
+    transform: scale(1.1);
+}
+.container4 {
+    padding: 0 30px;
+  }
+.title {
+    color: #bde0fe;
+  }
+.zeiten{ /* Kontaktseite*/
+color: white;
+}
+.zeiten th{
+    text-align: left;
+    width: 150px;
+}
+.colllumn2 .maps{
+    margin-top: -500px;
+    margin-left: 67%;
+    width: 950px;
+    border-radius: 16px;
+}
